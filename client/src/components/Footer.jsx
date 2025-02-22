@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
     {/* flex flex-col justify-between */}
-      <footer className="p-8 w-full sticky bottom-0 h-32  bg-gradient-to-r from-white to-white dark:from-[#171d30] dark:to-[#001f3d] text-black dark:text-white bg-emerald-500 shadow-lg shadow-emerald-500/50">
+      <footer className="p-8 w-full h-32  bg-gradient-to-r from-white to-white dark:from-[#171d30] dark:to-[#001f3d] text-black dark:text-white bg-emerald-500 shadow-lg shadow-emerald-500/50">
         <div className=" max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
           <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
             <div className="mx-auto max-w-sm lg:max-w-none">
