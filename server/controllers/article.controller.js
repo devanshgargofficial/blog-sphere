@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { Article, Comment } from '../models/article.model.js';
 import { User } from '../models/user.model.js';
-import { upload_on_cloudinary } from '../utils/cloudinary.js';
+import { upload_on_cloudinary } from '../Utils/cloudinary.js';
 import { Level } from '../models/level.model.js';
 
 const secretKey = process.env.SECRET_KEY;
