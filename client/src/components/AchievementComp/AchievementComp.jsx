@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Dialog } from "@headlessui/react";
 import { motion } from "framer-motion";
+import { link } from "../Baselink";
 
 const AchievementPage = () => {
   const [achievements, setAchievements] = useState([]);
@@ -12,7 +13,7 @@ const AchievementPage = () => {
   useEffect(() => {
     const fetchAchievements = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/achievement/getachievements");
+        const response = await axios.get(`${link}/api/achievement/getachievements`);
         setAchievements(response.data.fetchedAchievements);
       } catch (err) {
         setError("Failed to load achievements");
