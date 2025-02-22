@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 import { Article } from '../models/article.model.js';
 import { Comment } from '../models/article.model.js';
 import { sendMail } from '../Utils/mailsender.js';
-import { upload_on_cloudinary } from '../utils/cloudinary.js';
+import { upload_on_cloudinary } from '../Utils/cloudinary.js';  //changed here 
 
 dotenv.config({ path: './.env' });
 const secretKey = process.env.SECRET_KEY;
